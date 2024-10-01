@@ -1,6 +1,7 @@
 package com.example;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Press ⇧ twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -95,11 +96,11 @@ public class Main {
 //            System.out.println("Beraber deyil");
 //        }
 
-        String username = "sanan";
-        String email = "sanan@example.com";
-        String password = "12345";
-        int age = 27;
-        boolean emailConfirmed = true;
+//        String username = "sanan";
+//        String email = "sanan@example.com";
+//        String password = "12345";
+//        int age = 27;
+//        boolean emailConfirmed = true;
 
         // true  && true  == true
         // true  && false == false
@@ -237,7 +238,7 @@ public class Main {
 //        String stu2 = "Lamiye";
 //        String stu3 = "Rena";
 
-        String[] students = {"Fatime","Lamiye H", "Nuray","Peri","Lamiye M","Raye","Ilahe"};
+//        String[] students = {"Fatime","Lamiye H", "Nuray","Peri","Lamiye M","Raye","Ilahe"};
 
 
         // Loops : for
@@ -263,7 +264,7 @@ public class Main {
 //            System.out.println(students[i]);
 //        }
 
-        Random random = new Random();
+//        Random random = new Random();
 
 //        int number = 9;
 //
@@ -283,15 +284,115 @@ public class Main {
 //
 //        System.out.println(students[rndNumber]);
 
-        boolean data = false;
-        while (data){
-            System.out.println("Hello");
+//        boolean data = false;
+//        while (data){
+//            System.out.println("Hello");
+//        }
+//
+//        do {
+//            System.out.println("Isleyecek");
+//        }while (false);
+//
+//        System.out.println("Hello");
+
+//        Scanner scanner = new Scanner(System.in);
+
+
+//        Random random = new Random();
+//
+//        int number = scanner.nextInt();
+//
+//        int rndNumber = random.nextInt(1,11); // 2
+//        int count = 1; // 3
+//
+//
+//        while (number != rndNumber){
+//            count++;
+//            rndNumber = random.nextInt(1,11); // 5 6 9
+//        }
+//
+//        System.out.println(number + " ededini komputer " + count + " defeye tapdi." );
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Adinizi daxil edin.");
+//        String name = scanner.nextLine();
+//        System.out.println("Soyadiniz daxil edin.");
+//        String surname = scanner.nextLine();
+//        System.out.println("Xos geldiniz "+ name + " " + surname);
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Emailiniz daxil edin");
+//        String email = scanner.nextLine();
+//        System.out.println("Sifresiniz daxil edin");
+//        String password = scanner.nextLine();
+//
+//
+//        String dbEmail = "sanan";
+//        String dbPassword = "12345";
+//
+//        if (dbEmail.equals(email) && dbPassword.equals(password)){
+//            System.out.println("Xos geldiniz");
+//        }else{
+//            System.out.println("Email ve ya sifre yanlisdir");
+//        }
+
+
+//        int a = 3;
+//        int b = 4;
+//        b = a;
+//        a = 5;
+//        System.out.println(a);
+//        System.out.println(b);
+//
+//
+//        int[] aa = {1,3,5};
+//        int[] bb = {4,7,9};
+//        aa = bb;
+//        bb[0] = 100;
+//
+//
+//        System.out.println(aa[0]+","+aa[1]+","+aa[2]);
+//        System.out.println(bb[0]+","+bb[1]+","+bb[2]);
+
+
+//        String[] students = {"Fatime","Lamiye H", "Nuray","Peri","Lamiye M","Raye","Ilahe","Ilkin"};
+//
+//        System.out.println(students);
+//
+//        students[7] = "Kamran";
+//        for (int i = 0; i < students.length; i++) {
+//            System.out.println(students[i]);
+//        }
+
+
+
+        int[] numbers = new int[3]; // 2,6,7
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i+1 +" edidi daxil edin");
+            int userInput = scanner.nextInt();
+            numbers[i] = userInput;
         }
 
-        do {
-            System.out.println("Isleyecek");
-        }while (false);
+        
 
-        System.out.println("Hello");
+        Random random = new Random();
+
+        for (int j = 0; j < numbers.length; j++) {
+            int number = numbers[j];
+            int rndNumber = random.nextInt(1,11); // 2
+            int count = 1; // 3
+
+            while (number != rndNumber){
+                count++;
+                rndNumber = random.nextInt(1,11); // 5 6 9
+            }
+
+            System.out.println(number + " ededini komputer " + count + " defeye tapdi." );
+        }
+
     }
 }
